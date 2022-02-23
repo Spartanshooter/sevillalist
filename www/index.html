@@ -55,13 +55,13 @@
 				<h1>Home</h1>
 			</div>
 			<ul data-role="listview" id="lista">
-				<li><a href="#page1">Page1</a></li>
-				<li><a href="#page2">Page2</a></li>
-				<li><a href="#page3">Page3</a></li>
+				<li><a href="#page1">Page1</a><button class="deleteButton">Eliminar</button></li>
+				<li><a href="#page2">Page2</a><button class="deleteButton">Eliminar</button></li>
+				<li><a href="#page3">Page3</a><button class="deleteButton">Eliminar</button></li>
 			</ul>
 			
-			<input type="text" name="newtask"/>
-			<button onclick="anadirli()">+ Afegir</button>
+			<input type="text" id="newtask"/>
+			<button id="addButton">Afegir</button>
 
 			<div data-role="footer" data-position="fixed">
 				<h1>Home</h1>
@@ -121,14 +121,14 @@
 				$.mobile.defaultDialogTransition = "none";
 		});
 		</script><script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script><script src="js/index.js"></script>
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			function anadirli() {
 				var ul = document.getElementById("lista");
 				var li = document.createElement("li");
 				li.appendChild(document.createTextNode("nueva li"));
 				ul.appendChild(li);
 			}
-		</script>
+		</script>-->
 	</body>
 
 </html>
