@@ -36,12 +36,10 @@ function onDeviceReady() {
 
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    //document.getElementById('deviceready').classList.add('ready');
     $( '#addButton' ).click(function() {
         let text = $('#newtask').val();
         array.push(text);
         x=1;
-        //json.stringify(datos);
         let newelem = $("<li><a href=''>"+text+'</a><button class="deleteButton">Eliminar</button></li>');
         $("ul").append(newelem);
         localStorage.setItem("Datos", array);
