@@ -24,7 +24,7 @@ function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     var x = localStorage.getItem("x");
     var array = [];
-    if (x != "null") {
+    if (x != null) {
         let datos = localStorage.getItem("Datos");
         array = datos.split(',');
         for (i in array) {
